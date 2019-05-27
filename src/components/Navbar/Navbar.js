@@ -6,11 +6,12 @@ class Navbar extends Component {
     render() {
         return (
             <div className="navbar">
+                <p className="navbar-header">TRIP PLANNER</p>
                 <div className="nav-items-container">
-                    <NavLink className="navbar-item" activeClassName="active" to="/plan">Plan</NavLink>
-                    <NavLink className="navbar-item" activeClassName="active" to="/browse">Browse</NavLink>
-                    <NavLink className="navbar-item" activeClassName="active" to="/account">Account</NavLink>
-                    <NavLink className="navbar-item" activeClassName="active" to="/savedtrips">Saved Trips</NavLink>
+                    <NavLink className="navbar-item" activeClassName="active" to="/plan">PLAN</NavLink>
+                    <NavLink className="navbar-item" activeClassName="active" to="/browse">BROWSE</NavLink>
+                    <NavLink className="navbar-item" activeClassName="active" to="/account">ACCOUNT</NavLink>
+                    <NavLink className="navbar-item" activeClassName="active" to="/savedtrips">SAVED TRIPS</NavLink>
                 </div>
             </div>
         );
