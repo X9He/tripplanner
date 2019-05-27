@@ -1,0 +1,31 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px 10%;
+  //border-bottom: 1px solid #6F2232;
+  background-color: #1A1A1C;
+  color: white;
+}
+
+.nav-items-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar-item {
+  font-family: 'Shadows Into Light', serif;
+  margin-right: 40px;
+  color: white;
+  @media (max-width: 700px) {
+    margin-right: 20px;
+  }
+  &:hover {
+    color: #CC8E03;
+    text-decoration: none;
+  }
+}
+
+.active {
+  color: #CC8E03;
+}
