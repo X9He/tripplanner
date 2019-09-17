@@ -17,6 +17,7 @@ class PlanTrip extends Component {
                     <EditTextAddress/>
                 </div>
                 <div>
+                    <button>Generate Optimal Trip!</button>
                     <button>Save Trip</button>
                 </div>
             </div>
