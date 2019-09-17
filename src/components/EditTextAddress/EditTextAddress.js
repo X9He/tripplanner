@@ -5,9 +5,7 @@ class EditTextAddress extends Component {
     render() {
         return (
             <div className="edit-text-address-main-body">
-                <input className="main-input" type="text"/>
-                <i className="icons far fa-plus-square"></i>
-                <i className="icons far fa-minus-square"></i>
+                <input placeholder="type in the address of your destination!" className="main-input" type="text"/>
             </div>
         );
     }
