@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import './PlanTrip.scss';
-import EditTextAddress from '../EditTextAddress/EditTextAddress'
+import EditTextAddress from '../../components/EditTextAddress/EditTextAddress'
+import { addTrip } from '../../redux/trips/trips.actions'
 
 class PlanTrip extends Component {
     constructor(props) {
@@ -63,7 +65,16 @@ class PlanTrip extends Component {
     }
 
     saveTrip(){
+        this.props.addTrip(this.state.tripList);
     }
 }
 
-export default PlanTrip;
+const mapStateToProps = state => ({
+    trips: state.trips
+});
+
+const mapDispatchToProps = dispatch => ({
+    addTrip: trip => dispatch(addTrip(trip))
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(PlanTrip);

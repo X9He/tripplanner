@@ -3,7 +3,7 @@ const INITIAL_STATE = {
 };
 
 
-const TripReducer = (state = INITIAL_STATE, action) => {
+const tripsReducer = (state = INITIAL_STATE, action) => {
     switch (action.type) {
         case 'ADD_TRIP':
             return {
@@ -15,4 +15,4 @@ const TripReducer = (state = INITIAL_STATE, action) => {
     }
 };
 
-export default TripReducer;
+export default tripsReducer;
